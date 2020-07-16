@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">HomeTask</string>
+    <string name="show_product">Show Product</string>
+    <string name="create_product">Create Product</string>
+    <string name="name">Name</string>
+    <string name="description">Description</string>
+    <string name="regular_price">Reguler Price</string>
+    <string name="sale_price">Sale Price</string>
+    <string name="product_photo">Product Photo</string>
+    <string name="upload_image">Upload Image</string>
+    <string name="submit">Submit</string>
+    <string name="enter_name">Enter name</string>
+    <string name="enter_description">Enter description</string>
+    <string name="enter_regular_price">Enter regular price</string>
+    <string name="enter_sale_price">Enter sale price</string>
+    <string name="deleted">Deleted Successfully</string>
+    <string name="blank">No Data Available</string>
+    <string name="color">Color</string>
+    <string name="add">Add</string>
+    <string name="store">Store</string>
+    <string name="select_store">Select Store</string>
+    <string name="enter">Enter</string>
+    <string name="enter_color_code">Enter color code</string>
+    <string name="enter_valid_color_code">Enter valid color code</string>
+    <string name="enter_store_key">Enter store key</string>
+    <string name="enter_valid_store_key">Enter valid store key</string>
+    <string name="click_enter_button">Click enter button</string>
+    <string name="store_key_hint">Enter store key : 101, 102, 103, 104</string>
+    <string name="color_code_hint">eg : #000000</string>
+
+
+</resources>
