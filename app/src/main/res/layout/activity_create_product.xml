@@ -221,8 +221,6 @@
 
                 </LinearLayout>
 
-
-
                 <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -232,9 +230,6 @@
                     android:layout_margin="60dp"
                     android:background="@drawable/button_border"
                     android:onClick="@{()->viewModel.onSubmit()}"/>
-
-
-
 
             </LinearLayout>
 

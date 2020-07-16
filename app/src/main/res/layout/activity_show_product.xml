@@ -56,15 +56,11 @@
                 layout="@layout/product_full_image"
                 android:visibility="@{viewModel.fullScreenStatus ? View.VISIBLE : View.GONE }"/>
 
-
             <include
                 layout="@layout/blank"
                 android:visibility="@{viewModel.emptyProduct ? View.VISIBLE : View.GONE }"/>
 
-
         </RelativeLayout>
 
-
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
-
 </layout>

@@ -1,8 +1,6 @@
 package com.example.hometask.viewmodel
 
 import android.app.Application
-import android.net.Uri
-import android.text.Editable
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.MutableLiveData
 import com.example.hometask.R
@@ -31,18 +29,14 @@ class CreateProductViewModel(application: Application): AndroidViewModel(applica
         if (addProductValidate()) {
             val product: Product
             if (id.value.isNullOrEmpty()) {
-                product = Product(UUID.randomUUID().toString(), etName.value!!, etDescription.value!!, etRegularPrice.value!!.toDouble(), etSalePrice.value!!.toDouble(), imagePath.value!!, etColor.value!!, storeName.value!!  )
+                product = Product(UUID.randomUUID().toString(), etName.value!!, etDescription.value!!, etRegularPrice.value!!.toDouble(), etSalePrice.value!!.toDouble(), imagePath.value!!, etColor.value!!, storeName.value!!, etStores.value!!  )
             }
             else {
-                product = Product(id.value!!, etName.value!!, etDescription.value!!, etRegularPrice.value!!.toDouble(), etSalePrice.value!!.toDouble(), imagePath.value!!, etColor.value!!, storeName.value!!  )
+                product = Product(id.value!!, etName.value!!, etDescription.value!!, etRegularPrice.value!!.toDouble(), etSalePrice.value!!.toDouble(), imagePath.value!!, etColor.value!!, storeName.value!!, etStores.value!!  )
             }
 
             submit.value = product
         }
-    }
-
-    fun onAddColor() {
-
     }
 
     fun onUploadImage() {
@@ -94,6 +88,11 @@ class CreateProductViewModel(application: Application): AndroidViewModel(applica
     fun onEnterStore() {
         if (!etStores.value.isNullOrEmpty()) {
             storeName.value = stores.value!!.get(etStores.value)
+
+            if (storeName.value == null)
+            {
+                error.value = this.getApplication<Application>().getString(R.string.enter_valid_store_key)
+            }
         }
         else{
             error.value = this.getApplication<Application>().getString(R.string.enter_store_key)

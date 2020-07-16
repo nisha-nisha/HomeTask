@@ -1,6 +1,5 @@
 package com.example.hometask.database
 
-import androidx.lifecycle.LiveData
 import androidx.room.*
 
 @Dao

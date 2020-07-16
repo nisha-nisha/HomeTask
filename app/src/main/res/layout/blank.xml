@@ -18,6 +18,5 @@
             android:textColor="@color/colorDarkerGray"
             android:layout_centerInParent="true"/>
 
-
     </RelativeLayout>
 </layout>

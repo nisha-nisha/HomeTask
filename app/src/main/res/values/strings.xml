@@ -9,6 +9,9 @@
     <string name="product_photo">Product Photo</string>
     <string name="upload_image">Upload Image</string>
     <string name="submit">Submit</string>
+    <string name="data_added">Added to Database</string>
+    <string name="updated_successfully">Updated Successfully</string>
+    <string name="permission_denied">Permission denied</string>
     <string name="enter_name">Enter name</string>
     <string name="enter_description">Enter description</string>
     <string name="enter_regular_price">Enter regular price</string>
@@ -27,6 +30,4 @@
     <string name="click_enter_button">Click enter button</string>
     <string name="store_key_hint">Enter store key : 101, 102, 103, 104</string>
     <string name="color_code_hint">eg : #000000</string>
-
-
 </resources>

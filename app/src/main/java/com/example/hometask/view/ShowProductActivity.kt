@@ -18,9 +18,7 @@ import com.example.hometask.database.ProductDatabase
 import com.example.hometask.databinding.ActivityShowProductBinding
 import com.example.hometask.viewmodel.ShowProductViewModel
 import com.google.gson.Gson
-import kotlinx.android.synthetic.main.activity_create_product.*
 import kotlinx.android.synthetic.main.activity_create_product.toolbar
-import kotlinx.android.synthetic.main.activity_show_product.*
 import kotlinx.android.synthetic.main.product_full_image.*
 import java.io.File
 
@@ -70,7 +68,6 @@ class ShowProductActivity: AppCompatActivity(), ProductListAdapter.OnEditClickLi
 
         override fun onPostExecute(list: List<Product>?) {
             if (list != null && list.size>0){
-                println("**********"+list.size)
                 context.showProductViewModel.emptyProduct.value = false
                 context.setProductAdapter(list)
             }
@@ -98,7 +95,6 @@ class ShowProductActivity: AppCompatActivity(), ProductListAdapter.OnEditClickLi
         }
 
     }
-
 
     private fun setProductAdapter(list: List<Product>){
 
@@ -140,6 +136,4 @@ class ShowProductActivity: AppCompatActivity(), ProductListAdapter.OnEditClickLi
         showProductViewModel.fullScreenStatus.value = true
 
     }
-
-
 }
